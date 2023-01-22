@@ -68,16 +68,16 @@ function getAlbums(){
   }
   return (
     <div className='flex justify-center bg-gray-50' >
-    <div className=' bg-slate-200 w-fit shadow-md '>
+    <div className=' bg-slate-200 w-max shadow-md px-12 '>
     <h1 className=" flex-col  text-4xl mx-64 my-6 font-mono font-bold">Album List App</h1>
-    <div className='flex justify-around mx-32 bg-slate-100  h-10 w-max'>
-      <input className='border-2 rounded-sm border-gray-300' type='text' 
+    <div className='flex justify-around mx-26 bg-slate-100  h-10 w-max'>
+      <input className='border-2 rounded-sm w-64 border-gray-300' type='text' 
       value={inputdata.title || ''} 
       name='title' autoComplete='off'
       placeholder='Enter name'
       onChange={data} />
       &nbsp; &nbsp;
-<input className='border-2 rounded-sm border-gray-300'  type='number' 
+<input className='border-2 w-64 rounded-sm border-gray-300'  type='number' 
       value={inputdata.id || ''} 
       name='id' autoComplete='off'
       placeholder='Enter Id'
